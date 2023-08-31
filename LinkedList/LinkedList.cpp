@@ -34,7 +34,7 @@ public:
     }
 
     void pushFront(int num) {
-        Node* newHead = new Node(num);
+        Node* newHead = new Node(num,head);
         head = newHead;
         if (tail == nullptr) {
             tail = head;
